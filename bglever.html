@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Étudiant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #0078D7;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #005bb5;
+            color: #fff;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0078D7;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #005bb5;
+            color: #fff;
+        }
+        .intro {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .intro img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 1rem;
+        }
+        .intro a {
+            color: #0078D7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .intro a:hover {
+            text-decoration: underline;
+        }
+        button {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bastien Gléver</h1>
+        <p>Bonjour et bienvenue sur mon portfolio !</p>
+    </header>
+
+    <nav>
+        <a href="#competences">Compétences</a>
+        <a href="#travaux">Travaux de groupe</a>
+        <a href="#stages">Stages</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section>
+        <div class="intro">
+            <img src="photo_bastien.jpg" alt="Photo de profil">
+            <div>
+                <p>Etudiant en deuxième année de BUT sciences des données à l’IUT de Vannes, j’ai fait le choix du parcours Visualisation et Conception d’Outils Décisionnels (VCOD) avec l’option Système d’Information Géographique (SIG). Découvrez mes compétences, projets et expériences ci-dessous.</p>
+                <p><a href="CV_GLEVER_Bastien.pdf" target="_blank">Téléchargez mon CV</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences">
+        <h2>Compétences</h2>
+        <ul>
+            <li>Programmation : HTML, Python, R, SQL</li>
+            <li>Gestion de projet</li>
+            <li>Outils : Power BI, QGis, Dbeaver</li>
+        </ul>
+    </section>
+
+    <section id="travaux">
+        <h2>Projets réalisés</h2>
+        <p>Voici quelques projets réalisés seul ou en groupe :</p>
+        <ul>
+            <li>
+                <strong>Reporting d’une analyse multivariée :</strong><br>
+                Conception d’un outil de restitution automatisée des résultats d’une analyse exploratoire de données.<br>
+                Lien vers mon projet : <a href="mailto:glever.e2301977@etud.univ-ubs.fr">Mon projet Rshiny</a>
+            </li>
+            <li>
+                <strong>Analyse de données, reporting et datavisualisation :</strong><br>
+                Développement d'un tableau de bord pour suivre les patients de plusieurs hôpitaux en Bretagne Sud.
+            </li>
+        </ul>
+    </section>
+
+    <section id="stages">
+        <h2>Expériences professionnelles</h2>
+
+        <!-- Liste des stages -->
+        <div id="stage-list">
+            <p>Expériences professionnelles significatives :</p>
+            <ul>
+                <li><a href="#" onclick="showStage('orange')"><strong>Stage chez Orange</strong></a></li>
+            </ul>
+        </div>
+
+        <!-- Détail stage Orange -->
+        <div id="orange" class="stage-detail" style="display:none;">
+            <h3>Stage chez Orange</h3>
+            <p><strong>Durée :</strong> 9 semaines (mai - juin 2025)</p>
+            <p><strong>Contexte :</strong> Intégré à l'équipe INEA FH, j'ai créé des tableaux de bords de suivi du parc FH d'Orange France à l’aide de Power BI.</p>
+            <ul>
+                <li>Dans le cadre de ma formation de Bachelor Universitaire et Technologique Sciences des Données, j’ai eu l’opportunité d’intégrer, lors de mon stage de fin d’année, le groupe Orange, acteur majeur dans le secteur des télécommunications. Au cours de ce stage d’une durée de 2 mois, j’ai pu exécuter le poste d’administrateur chargé de l’exploitation, en lien avec des activités comme l’analyse et le traitement de données.
+				Le service auquel je suis rattaché est le INEA FH et plus précisément, je fais partie de l’équipe PREM. Cette équipe est variée, elle comporte des professionnels spécialisés dans le suivi de performance, la supervision technique et la gestion des incidents liés aux liaisons FH. Ces faisceaux hertziens sont au cœur d’enjeux majeurs car ils permettent d’assurer la connectivité de nombreux sites, particulièrement en zones rurales qui ne sont pas desservies par la fibre optique. Le service est basé sur le site de Blagnac en Haute-Garonne. L’environnement de travail est stimulant et mêle expertise technique et collaboration.
+				</li>
+				<li>Ce stage a été la continuité parfaite de ma formation afin d’allier des connaissances pratiques à celles théoriques déjà acquises, en particulier le traitement de données, la manipulation de bases de données et leurs visualisations. J’ai pu approfondir l’usage d’outils découverts en cours tels que Power BI afin de générer des tableaux de bord (cartes, tableaux croisés dynamiques, …).
+				</li>
+				<li>Ma principale contribution dans l’équipe a consisté à l’automatisation de la réalisation de rapports mensuels, sous la forme de deux tableaux de bord. Un portant sur les « end of support », les fins de support des différents matériels sur les châssis. L’autre portant sur les tickets d’incidents sur le réseau des faisceaux hertziens d’Orange. Ces rapports étaient auparavant réalisés de manière manuelle, ce qui compliquait le suivi des performances du réseau et l’identification des liaisons problématiques. L’automatisation de ces données permet désormais d’aider à la prise de décisions stratégiques, notamment en lien avec le budget et les priorités d’interventions. J’ai pu rendre le processus plus rapide et accessible à l’aide notamment d’un tableau de bord développé avec Power BI.
+				</li>
+				<li>En plus des aspects purement techniques, ce stage m’a permis de me confronter au milieu professionnel des grandes entreprises. J’ai découvert les enjeux liés à l’organisation de cette dernière, notamment liés au travail en équipe. J’ai également découvert les différentes répartitions des responsabilités, la gestion des projets et l’importance de la communication entre chaque service.
+				</li>
+				<li>Pour finir, ce stage m’a permis d’atteindre des objectifs à la fois personnels et professionnels. J’ai pu développer mon autonomie, ma capacité à apprendre par moi-même, mon esprit analytique et ma capacité à m’intégrer au sein d’une équipe déjà fonctionnelle. Ce stage m’a permis de me rendre compte de ce à quoi ressemblait un travail en entreprise et m’a ainsi préparé à débuter dans la vie professionnelle.
+				</li>
+            </ul>
+            <button onclick="goBack()">← Retour à la liste</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Vous pouvez me contacter via :</p>
+        <ul>
+			<li>Email : <a href="mailt:bastien.glever@gail.com">bastien.glever@gmail.com</a></li>
+            <li>Email : <a href="mailto:glever.e2301977@etud.univ-ubs.fr">glever.e2301977@etud.univ-ubs.fr</a></li>
+            <li>LinkedIn : <a href="https://www.linkedin.com/" target="_blank">Mon profil LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mon Portfolio Étudiant. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function showStage(id) {
+            // Masquer la liste
+            document.getElementById("stage-list").style.display = "none";
+
+            // Masquer toutes les sections de détail
+            const details = document.querySelectorAll(".stage-detail");
+            details.forEach(el => el.style.display = "none");
+
+            // Afficher celle qu'on a cliquée
+            document.getElementById(id).style.display = "block";
+        }
+
+        function goBack() {
+            // Cacher les détails
+            const details = document.querySelectorAll(".stage-detail");
+            details.forEach(el => el.style.display = "none");
+
+            // Réafficher la liste
+            document.getElementById("stage-list").style.display = "block";
+        }
+    </script>
+</body>
+</html>
